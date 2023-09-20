@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./one-button.component.css']
 })
 export class OneButtonComponent {
-
+  testClick(num: number){
+    console.log(num +  " clicked.");
+  }
 }

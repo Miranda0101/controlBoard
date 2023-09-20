@@ -1,0 +1,31 @@
+.item-buttons {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20%;
+  }
+  .item-buttons:hover{
+      cursor: pointer;
+  }
+ 
+  .mid {
+    grid-row: 3 / span 2;
+  }
+  
+  .one-buttons-panel {
+    margin: 5%;
+    margin-left: 30%;
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    grid-template-rows: repeat(6, 7fr);
+    place-items: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 70vh;
+    width: 20vw;
+  }
+  
+  .one{
+    grid-column: 2 / span 2;
+  }
+
+  
