@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./five-buttons.component.css']
 })
 export class FiveButtonsComponent {
-
+  testClick(num: number){
+    console.log(num +  " clicked.");
+  }
 }

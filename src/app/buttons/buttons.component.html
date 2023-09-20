@@ -1,8 +1,40 @@
-<div class="buttons-container">
-    <app-five-buttons></app-five-buttons>
-    <app-one-button></app-one-button>
-    <app-voice-control></app-voice-control>
-    <app-lightness></app-lightness>
-    <app-eight-buttons></app-eight-buttons>
-    <app-four-buttons></app-four-buttons>
+<div class="left-board">
+  <div>
+    <app-five-buttons *ngIf="tabIndex == 0"></app-five-buttons>
+    <app-one-button *ngIf="tabIndex == 1"></app-one-button>
+    <app-eight-buttons *ngIf="tabIndex == 2"></app-eight-buttons>
+    <app-four-buttons *ngIf="tabIndex == 3"></app-four-buttons>
+  </div>
+
+  <div class="bottom-nav-bar">
+    <p-toolbar>
+      <div class="p-toolbar-group-center">
+        <p-button
+          label="Five Buttons"
+          styleClass="p-button-raised p-button-text"
+          (onClick)="changeTab(0)"
+        ></p-button>
+        <p-button 
+          label="One Button"
+          styleClass="p-button-raised p-button-text"
+          (onClick)="changeTab(1)"
+        ></p-button>
+        <p-button 
+          label="Eight Buttons"
+          styleClass="p-button-raised p-button-text"
+          (onClick)="changeTab(2)"
+        ></p-button>
+        <p-button 
+          label="Four Buttons"
+          styleClass="p-button-raised p-button-text"
+          (onClick)="changeTab(3)"
+        ></p-button>
+      </div>
+    </p-toolbar>
+  </div>
+  
+</div>
+<p-divider layout="vertical"></p-divider>
+<div class="right-board">
+
 </div>

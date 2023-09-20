@@ -7,8 +7,9 @@ import { OneButtonComponent } from './one-button/one-button.component';
 import { VoiceControlComponent } from './voice-control/voice-control.component';
 import { LightnessComponent } from './lightness/lightness.component';
 import { ButtonsComponent } from './buttons.component';
-
-
+import { DividerModule } from 'primeng/divider';
+import { ToolbarModule } from 'primeng/toolbar';
+import { ButtonModule } from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -21,10 +22,13 @@ import { ButtonsComponent } from './buttons.component';
     ButtonsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    DividerModule,
+    ToolbarModule,
+    ButtonModule
   ],
   exports: [
     ButtonsComponent
   ]
 })
-export class ButtonsModule { }
+export class ManyButtonsModule { }

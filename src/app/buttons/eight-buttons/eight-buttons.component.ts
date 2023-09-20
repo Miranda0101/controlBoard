@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./eight-buttons.component.css']
 })
 export class EightButtonsComponent {
-
+  testClick(num: number){
+    console.log(num +  " clicked.");
+  }
 }

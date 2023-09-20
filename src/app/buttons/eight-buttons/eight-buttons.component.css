@@ -1,0 +1,43 @@
+.item-buttons {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20%;
+  }
+  .item-buttons:hover{
+      cursor: pointer;
+  }
+  
+  .top {
+    grid-row: 2 / span 2;
+  }
+  .bottom {
+    grid-row: 6 / span 2;
+  }
+  .mid {
+    grid-row: 4 / span 2;
+  }
+  
+  .eight-buttons-panel {
+    margin: 5%;
+    display: grid;
+    grid-template-columns: repeat(13, 4fr);
+    grid-template-rows: repeat(8, 7fr);
+    place-items: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 70vh;
+  }
+  
+  .one{
+    grid-column: 2 / span 2;
+  }
+  .two{
+    grid-column: 5 / span 2;
+  }
+  .three {
+    grid-column: 8 / span 2;
+  }
+  .four {
+    grid-column: 11 / span 2;
+  }
+  
