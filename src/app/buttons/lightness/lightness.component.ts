@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./lightness.component.css']
 })
 export class LightnessComponent {
-
+  lightness: number = 0;
+  chooseLightness(){
+    console.log(this.lightness);
+  }
 }

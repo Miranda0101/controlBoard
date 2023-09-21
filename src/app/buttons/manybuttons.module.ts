@@ -10,6 +10,8 @@ import { ButtonsComponent } from './buttons.component';
 import { DividerModule } from 'primeng/divider';
 import { ToolbarModule } from 'primeng/toolbar';
 import { ButtonModule } from 'primeng/button';
+import { KnobModule } from 'primeng/knob';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { ButtonModule } from 'primeng/button';
     CommonModule,
     DividerModule,
     ToolbarModule,
-    ButtonModule
+    ButtonModule,
+    KnobModule,
+    FormsModule
   ],
   exports: [
     ButtonsComponent
