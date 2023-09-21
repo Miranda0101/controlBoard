@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./eight-buttons.component.css']
 })
 export class EightButtonsComponent {
+  clickedButtons: boolean[] = [false, false, false, false,false, false, false, false];
   testClick(num: number){
     console.log(num +  " clicked.");
+    this.clickedButtons[num] = !this.clickedButtons[num];
   }
 }
