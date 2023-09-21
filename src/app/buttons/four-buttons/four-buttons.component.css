@@ -1,7 +1,12 @@
 .item-buttons {
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 20%;
+    border: 3px solid #0976fa;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    padding: 35px;
+  }
+  .clicked {
+    border: 3px solid #f90b0b;
   }
   .item-buttons:hover{
       cursor: pointer;
@@ -11,33 +16,29 @@
     grid-row: 2 / span 2;
   }
   .bottom {
-    grid-row: 6 / span 2;
-  }
-  .mid {
     grid-row: 4 / span 2;
   }
   
   .four-buttons-panel {
-    margin: 5%;
+    background-image: url('../../../assets/4_Touch_Black_Black_Front_no_icon.png');
+    background-size: 110%;
+    background-position: center;
+    margin: 0 5% 5% 5%;
+    margin-left: 15%;
     display: grid;
-    grid-template-columns: repeat(13, 4fr);
-    grid-template-rows: repeat(4, 7fr);
+    grid-template-columns: repeat(6, 6fr);
+    grid-template-rows: repeat(6, 6fr);
     place-items: center;
-    border: 1px solid black;
     border-radius: 15px;
-    height: 70vh;
+    height: 500px;
+    width: 500px;
   }
   
   .one{
     grid-column: 2 / span 2;
   }
   .two{
-    grid-column: 5 / span 2;
+    grid-column: 4 / span 2;
   }
-  .three {
-    grid-column: 8 / span 2;
-  }
-  .four {
-    grid-column: 11 / span 2;
-  }
+
   
