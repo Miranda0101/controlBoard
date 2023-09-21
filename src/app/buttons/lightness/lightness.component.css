@@ -1,0 +1,12 @@
+.lightness-control-panel{
+    background-image: url('../../../assets/Prima_Plus_Black_Black_front.jpg');
+    background-size: 100%;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+    margin-top: 10%;
+}
+.lightness-control-buttons{
+    height: 20px;
+    width: 20px;
+}

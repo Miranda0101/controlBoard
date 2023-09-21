@@ -6,6 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./voice-control.component.css']
 })
 export class VoiceControlComponent {
-  items: any | undefined;
-  
+  volumeUp(){
+    console.log("Volume++");
+  }
+  volumeDown(){
+    console.log("Volume--");
+  }
+  micOff(){
+    console.log("mic turned off");
+  }
+  micOn(){
+    console.log("mic turned on");
+  }
 }
+

@@ -1,0 +1,44 @@
+.voice-control-panel{
+    background-image: url('../../../assets/Echo_Dot_Top_view.png');
+    background-size: 200%;
+    background-position: center;
+    height: 300px;
+    width: 300px;
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(12, 3fr);
+    grid-template-rows: repeat(12, 3fr);
+    place-items: center;
+    color: yellow;
+    font-size: 3vw;
+}
+.voice-control-buttons{
+    height: 20px;
+    width: 20px;
+}
+.voice-control-buttons:hover {
+    cursor: pointer;
+}
+.volume {
+    grid-column: 6 / span 2;
+}
+.up {
+    grid-row: 2 /span 2;
+}
+.down {
+    grid-column: 6 / span 2;
+    grid-row: 10 /span 1;
+    align-self: start;
+}
+.mid {
+    grid-row: 6 /span 2;
+}
+.left {
+    grid-column: 3 / span 1;
+    justify-self: start;
+}
+.right {
+    grid-row: 6 /span 1;
+    grid-column: 10 / span 1;
+    justify-self: end;
+}

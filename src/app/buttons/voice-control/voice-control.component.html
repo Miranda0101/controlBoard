@@ -1,3 +1,10 @@
-<div>
-    
+<div class="voice-control-panel">
+    <div class="voice-control-buttons volume up" (click)="volumeUp()"></div>
+    <div class="voice-control-buttons mid right" (click)="micOn()"></div>
+    <div class="voice-control-buttons volume down" (click)="volumeDown()"></div>
+    <div class="voice-control-buttons mid left" (click)="micOff()">
+        <span class="material-symbols-outlined">
+        <!-- mic_off -->
+        </span>
+    </div>
 </div>
