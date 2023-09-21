@@ -1,3 +1,7 @@
 <div class="one-buttons-panel">
-    <div class="item-buttons mid one" (click)="testClick(1)">1</div>
+  <div
+    class="item-buttons mid one"
+    (click)="testClick(1)"
+    [ngClass]="{'clicked': buttonClicked}"
+  ></div>
 </div>

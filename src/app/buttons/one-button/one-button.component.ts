@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./one-button.component.css']
 })
 export class OneButtonComponent {
+  buttonClicked = false;
   testClick(num: number){
     console.log(num +  " clicked.");
+    this.buttonClicked = !this.buttonClicked;
   }
 }
