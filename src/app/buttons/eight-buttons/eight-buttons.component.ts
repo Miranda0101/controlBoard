@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ControlService } from '../control.service';
 
 @Component({
   selector: 'app-eight-buttons',
@@ -6,9 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./eight-buttons.component.css']
 })
 export class EightButtonsComponent {
-  clickedButtons: boolean[] = [false, false, false, false,false, false, false, false];
+  clickedButtons = this.controlService.eightButtons;
+  constructor(private controlService: ControlService) {}
   testClick(num: number){
     console.log(num +  " clicked.");
     this.clickedButtons[num] = !this.clickedButtons[num];
+    this.controlService.eightButtons = this.clickedButtons;
   }
 }

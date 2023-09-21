@@ -13,6 +13,7 @@ import { KnobModule } from 'primeng/knob';
 import { FormsModule } from '@angular/forms';
 import { SpeedDialModule } from 'primeng/speeddial';
 import { ToastModule } from 'primeng/toast';
+import { ControlService } from './control.service';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { ToastModule } from 'primeng/toast';
   ],
   exports: [
     ButtonsComponent
-  ]
+  ],
+  providers: [ControlService]
 })
 export class ManyButtonsModule { }

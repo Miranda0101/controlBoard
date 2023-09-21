@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./buttons.component.css']
 })
 export class ButtonsComponent {
-  tabIndex = 2;
+  tabIndex = 1;
 
   changeTab(index: number) {
     this.tabIndex = index;
