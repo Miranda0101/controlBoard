@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./voice-control.component.css']
 })
 export class VoiceControlComponent {
-
+  items: any | undefined;
+  
 }

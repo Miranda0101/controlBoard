@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FiveButtonsComponent } from './five-buttons/five-buttons.component';
 import { EightButtonsComponent } from './eight-buttons/eight-buttons.component';
 import { FourButtonsComponent } from './four-buttons/four-buttons.component';
 import { OneButtonComponent } from './one-button/one-button.component';
@@ -12,10 +11,11 @@ import { ToolbarModule } from 'primeng/toolbar';
 import { ButtonModule } from 'primeng/button';
 import { KnobModule } from 'primeng/knob';
 import { FormsModule } from '@angular/forms';
+import { SpeedDialModule } from 'primeng/speeddial';
+import { ToastModule } from 'primeng/toast';
 
 @NgModule({
   declarations: [
-    FiveButtonsComponent,
     EightButtonsComponent,
     FourButtonsComponent,
     OneButtonComponent,
@@ -29,7 +29,9 @@ import { FormsModule } from '@angular/forms';
     ToolbarModule,
     ButtonModule,
     KnobModule,
-    FormsModule
+    FormsModule,
+    SpeedDialModule,
+    ToastModule
   ],
   exports: [
     ButtonsComponent
