@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
 })
 export class LightnessComponent {
   lightness: number = 0;
-  chooseLightness(){
-    console.log(this.lightness);
+  chooseLightness(num: number){
+    this.lightness = num;
+    console.log("Current lightness: ", this.lightness);
   }
 }
