@@ -26,7 +26,7 @@
     position: relative;
     /* margin: 0 5% 5% 5%; */
     /* margin-left: 15%; */
-    margin-top:50px;
+    margin-top:70px;
     display: grid;
     grid-template-columns: repeat(7, 2fr);
     grid-template-rows: repeat(7, 1fr);
