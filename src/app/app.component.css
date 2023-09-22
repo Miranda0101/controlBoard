@@ -1,0 +1,19 @@
+
+app-buttons{
+    /* display: flex;
+    flex-direction: row;
+    height: 100vh; */
+    /* background-color: #0e0e11; */
+}
+.container{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.panelContainer{
+    position: relative;
+    width:800px;
+}

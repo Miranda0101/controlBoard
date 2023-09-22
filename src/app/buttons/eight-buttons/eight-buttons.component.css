@@ -1,0 +1,60 @@
+.item-buttons {
+  border: 3px solid #0976fa;
+  border-radius: 50%;
+  /* height: 50px;
+    width: 50px; */
+  padding: calc(20%);
+  z-index: 999;
+}
+
+.clicked {
+  border: 3px solid #f90b0b;
+}
+
+.item-buttons:hover {
+  cursor: pointer;
+}
+
+.top {
+  grid-row: 3/ span 1;
+}
+
+.bottom {
+  grid-row: 5 / span 1;
+}
+
+#image {
+  position: absolute;
+  width: 110%;
+}
+
+.eight-buttons-panel {
+  /* background-image: url('../../../assets/8_Touch_Gold_with_Black_Front_no_icon.png');
+    background-size: 130%; */
+  /* background-position: center; */
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(14, 4fr);
+  grid-template-rows: repeat(7, 1fr);
+  place-items: center;
+  /* height: 600px; */
+  width: 100%;
+  position: relative;
+  /* scale:0.7; */
+}
+
+.one {
+  grid-column: 4 / span 2;
+}
+
+.two {
+  grid-column: 6 / span 2;
+}
+
+.three {
+  grid-column: 9 / span 2;
+}
+
+.four {
+  grid-column: 11 / span 2;
+}

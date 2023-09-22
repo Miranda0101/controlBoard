@@ -1,0 +1,27 @@
+<div id="panelContainer">
+  <div class="left-board">
+
+    <app-one-button *ngIf="tabIndex == 1"></app-one-button>
+    <app-eight-buttons *ngIf="tabIndex == 2"></app-eight-buttons>
+    <app-four-buttons *ngIf="tabIndex == 3"></app-four-buttons>
+
+
+    <div class="bottom-nav-bar">
+      <p-toolbar>
+        <div class="p-toolbar-group-center">
+          <p-button label="Power" styleClass="p-button-raised p-button-text" (onClick)="changeTab(1)"></p-button>
+          <p-button label="Lounge" styleClass="p-button-raised p-button-text" (onClick)="changeTab(2)"></p-button>
+          <p-button label="Bedroom" styleClass="p-button-raised p-button-text" (onClick)="changeTab(3)"></p-button>
+        </div>
+      </p-toolbar>
+    </div>
+
+  </div>
+  <!-- <p-divider layout="vertical"></p-divider> -->
+  <div class="right-board">
+    <div class="commonControlPanel">
+      <app-lightness></app-lightness>
+      <app-voice-control></app-voice-control>
+    </div>
+  </div>
+</div>

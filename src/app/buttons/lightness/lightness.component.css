@@ -1,0 +1,38 @@
+.clicked{
+    color: #f90b0b;
+}
+.lightness-control-panel{
+    background-image: url('../../../assets/Prima_Plus_Black_Black_front.jpg');
+    background-size: 100%;
+    background-position: center;
+    width: 150px;
+    height: 150px;
+    /* width: 150px; */
+    margin-top: 10%;
+    color: #0976fa;
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    grid-template-rows: repeat(4, 3fr);
+    place-items: center;
+}
+.lightness-control-buttons{
+    height: 20px;
+    width: 20px;
+}
+.lightness-control-buttons:hover {
+    cursor: pointer;
+}
+.one {
+    grid-column: 2 / span 1;
+    grid-row: 2 /span 1;
+}
+.two {
+    grid-column: 4 / span 1;
+    grid-row: 2 /span 1;
+    justify-self: end;
+}
+.three {
+    grid-column: 3 / span 1;
+    grid-row: 4 /span 1;
+    align-self: start;
+}

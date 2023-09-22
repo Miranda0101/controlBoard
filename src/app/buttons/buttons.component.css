@@ -1,0 +1,49 @@
+#panelContainer{
+    background-color: black;
+    max-height: 415px;
+    max-width:800px;
+    display: flex;
+    /* position: relative; */
+    /* display: inline-block; */
+}
+
+.bottom-nav-bar {
+    position: absolute;
+    bottom:0;
+    width: 100%;
+}
+.left-board{
+    width: 65%;
+    text-align: center;
+    border-right: 1px white solid;
+    position: relative;
+    /* display: inline-block; */
+}
+::ng-deep .p-toolbar{
+    border: none;
+    justify-content: center !important;
+    background-color: #0e0e11;
+}
+/* ::ng-deep .p-divider-vertical {
+    z-index: 0;
+} */
+
+.right-board {
+    width: 35%;
+    /* border: 1px red solid; */
+    /* display: inline-block; */
+    height: 100%;
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; */
+}
+
+.commonControlPanel{
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}

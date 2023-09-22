@@ -1,0 +1,48 @@
+.item-buttons {
+    border: 3px solid #0976fa;
+    border-radius: 50%;
+ 
+    padding: 25px;
+    z-index: 999;
+  }
+  .clicked {
+    border: 3px solid #f90b0b;
+  }
+  .item-buttons:hover{
+      cursor: pointer;
+  }
+  
+  .top {
+    grid-row: 2 / span 2;
+  }
+  .bottom {
+    grid-row: 5/ span 2;
+  }
+  
+  .four-buttons-panel {
+    /* background-image: url('../../../assets/4_Touch_Black_Black_Front_no_icon.png');
+    background-size: 110%;
+    background-position: center; */
+    position: relative;
+    /* margin: 0 5% 5% 5%; */
+    /* margin-left: 15%; */
+    margin-top:50px;
+    display: grid;
+    grid-template-columns: repeat(7, 2fr);
+    grid-template-rows: repeat(7, 1fr);
+    place-items: center;
+    border-radius: 15px;
+  }
+  #image{
+    position: absolute;
+    width:60%;
+    height: calc(width);
+  }
+  .one{
+    grid-column: 3 / span 2;
+  }
+  .two{
+    grid-column: 4 / span 2;
+  }
+
+  
