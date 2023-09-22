@@ -9,11 +9,12 @@ import { ButtonsComponent } from './buttons.component';
 import { DividerModule } from 'primeng/divider';
 import { ToolbarModule } from 'primeng/toolbar';
 import { ButtonModule } from 'primeng/button';
-import { KnobModule } from 'primeng/knob';
 import { FormsModule } from '@angular/forms';
-import { SpeedDialModule } from 'primeng/speeddial';
 import { ToastModule } from 'primeng/toast';
 import { ControlService } from './control.service';
+import { OverlayPanelModule } from 'primeng/overlaypanel';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -29,10 +30,10 @@ import { ControlService } from './control.service';
     DividerModule,
     ToolbarModule,
     ButtonModule,
-    KnobModule,
     FormsModule,
-    SpeedDialModule,
-    ToastModule
+    ToastModule,
+    OverlayPanelModule,
+    BrowserAnimationsModule
   ],
   exports: [
     ButtonsComponent
