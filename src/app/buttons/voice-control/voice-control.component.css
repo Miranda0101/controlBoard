@@ -1,7 +1,7 @@
 .voice-control-panel{
-    /* background-image: url('../../../assets/Echo_Dot_Top_view.png'); */
-    /* background-size: 200%; */
-    /* background-position: center; */
+    background-image: url('../../../assets/Echo_Dot_Top_view.png');
+    background-size: 180%;
+    background-position: center;
     width: 100%;
     height: 60%;
     margin-top: 0%;
@@ -9,8 +9,8 @@
     grid-template-columns: repeat(12, 3fr);
     grid-template-rows: repeat(12, 3fr);
     place-items: center;
-    /* color: yellow; */
-    /* font-size: 3vw; */
+    color: yellow; 
+    font-size: 3vw;
 }
 #voice-control{
     position:absolute;
