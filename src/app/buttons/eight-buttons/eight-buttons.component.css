@@ -5,10 +5,12 @@
     width: 50px; */
   padding: calc(20%);
   z-index: 999;
+  box-shadow:  0px 0px 10px 2px #0976fa;
 }
 
 .clicked {
   border: 3px solid #f90b0b;
+  box-shadow:  0px 0px 10px 2px #f90b0b;
 }
 
 .item-buttons:hover {

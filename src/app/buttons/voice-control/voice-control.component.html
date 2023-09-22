@@ -1,11 +1,28 @@
 <div class="voice-control-panel">
-    <img id="voice-control" src='../../../assets/Echo_Dot_Top_view.png'>
-    <div class="voice-control-buttons volume up" (click)="volumeUp()"></div>
-    <div class="voice-control-buttons mid right" (click)="micOn()"></div>
-    <div class="voice-control-buttons volume down" (click)="volumeDown()"></div>
-    <div class="voice-control-buttons mid left" (click)="micOff()">
-        <span class="material-symbols-outlined">
-        <!-- mic_off -->
-        </span>
-    </div>
+  <div class="voice-control-buttons volume up" (click)="volumeUp()"></div>
+  <div class="voice-control-buttons mid right"></div>
+  <div class="voice-control-buttons volume down" (click)="volumeDown()"></div>
+
+  <div class="voice-control-buttons mid left" (click)="togglePanels($event)" #targetEL>
+  </div>
+  <p-overlayPanel #op1 [styleClass]="'panel-top'" [showCloseIcon]="true">
+    <ng-template pTemplate="content">
+        <p (click)="turnOnLights()">Alexa, turn on the bedroom light</p>
+    </ng-template>
+  </p-overlayPanel>
+  <p-overlayPanel #op2 [styleClass]="'panel-right'" [showCloseIcon]="true">
+    <ng-template pTemplate="content">
+        <p (click)="turnOffLights()">Alexa, turn off the bedroom light</p>
+    </ng-template>
+  </p-overlayPanel>
+  <p-overlayPanel #op3 [styleClass]="'panel-bottom'" [showCloseIcon]="true" >
+    <ng-template pTemplate="content">
+        <p (click)="turnOnFan()">Alexa, turn on the bedroom fan</p>
+    </ng-template>
+  </p-overlayPanel>
+  <p-overlayPanel #op4 [styleClass]="'panel-left'" [showCloseIcon]="true">
+    <ng-template pTemplate="content">
+        <p (click)="turnOffFan()">Alexa, turn off the bedroom fan</p>
+    </ng-template>
+  </p-overlayPanel>
 </div>

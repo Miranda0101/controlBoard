@@ -1,5 +1,5 @@
 #panelContainer{
-    background-color: black;
+    background-color: #0c0c0c;
     max-height: 415px;
     max-width:800px;
     display: flex;
@@ -22,7 +22,7 @@
 ::ng-deep .p-toolbar{
     border: none;
     justify-content: center !important;
-    background-color: #0e0e11;
+    background-color: #0c0c0c;
 }
 /* ::ng-deep .p-divider-vertical {
     z-index: 0;
