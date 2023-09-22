@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./voice-control.component.css']
 })
 export class VoiceControlComponent {
+  showMessage = false;
   volumeUp(){
     console.log("Volume++");
   }

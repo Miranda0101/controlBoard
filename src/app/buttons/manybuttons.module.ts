@@ -9,11 +9,9 @@ import { ButtonsComponent } from './buttons.component';
 import { DividerModule } from 'primeng/divider';
 import { ToolbarModule } from 'primeng/toolbar';
 import { ButtonModule } from 'primeng/button';
-import { KnobModule } from 'primeng/knob';
 import { FormsModule } from '@angular/forms';
-import { SpeedDialModule } from 'primeng/speeddial';
-import { ToastModule } from 'primeng/toast';
 import { ControlService } from './control.service';
+import { MenuModule } from 'primeng/menu';
 
 @NgModule({
   declarations: [
@@ -29,10 +27,8 @@ import { ControlService } from './control.service';
     DividerModule,
     ToolbarModule,
     ButtonModule,
-    KnobModule,
     FormsModule,
-    SpeedDialModule,
-    ToastModule
+    MenuModule
   ],
   exports: [
     ButtonsComponent
