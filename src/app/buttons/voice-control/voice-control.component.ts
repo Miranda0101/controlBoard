@@ -1,12 +1,10 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
+import { Component, ElementRef, OnInit, ViewChild, Renderer2 } from '@angular/core';
 import { OverlayPanel } from 'primeng/overlaypanel';
 
 @Component({
   selector: 'app-voice-control',
   templateUrl: './voice-control.component.html',
   styleUrls: ['./voice-control.component.css'],
-  providers: [MessageService],
 })
 export class VoiceControlComponent implements OnInit {
   @ViewChild('op1') op1: OverlayPanel | undefined;
@@ -14,7 +12,7 @@ export class VoiceControlComponent implements OnInit {
   @ViewChild('op3') op3: OverlayPanel | undefined;
   @ViewChild('op4') op4: OverlayPanel | undefined;
   @ViewChild('target') target: ElementRef | undefined;
-  constructor() {}
+  constructor(private renderer: Renderer2) {}
   ngOnInit() {
   }
 
@@ -32,15 +30,19 @@ export class VoiceControlComponent implements OnInit {
   }
 
   turnOnLights(){
-    console.log("lights on")
+    console.log("lights on");
+    this.op1?.hide();
   }
   turnOffLights(){
-    console.log("lights on")
+    console.log("lights off")
+    this.op2?.hide();
   }
   turnOnFan(){
     console.log("fan on")
+    this.op3?.hide();
   }
   turnOffFan(){
     console.log("fan off")
+    this.op4?.hide();
   }
 }
